@@ -1,0 +1,30 @@
+use s162b;
+create table t_emp(
+eid varchar(10) primary key,
+password varchar(20),
+ename varchar(20),
+sex varchar(3),
+eage int,
+salary int,
+ismanager varchar(3),
+tel varchar(20));
+insert into t_emp values('001','111111','张三','m',32,9000,'y','111111');
+insert into t_emp values('002','222222','李四','w',31,8000,'y','222222');
+insert into t_emp values('003','333333','王五','m',30,6000,'n','333333');
+insert into t_emp values('004','444444','aaa','w',28,5600,'n','444444');
+select * from t_emp;
+
+
+use s162b;
+create table t_prd(
+pid varchar(10) primary key,
+pname varchar(20),
+price float,
+pnumber int,
+supplier varchar(30),
+intime varchar(30));
+insert into t_prd values('01','红富士苹果',10.0,100,'东公司','20170301');
+insert into t_prd values('02','旺仔牛奶',39.0,200,'北公司','20170505');
+insert into t_prd values('03','黄金甜玉米',16.6,300,'南公司','20170428');
+insert into t_prd values('04','蒙牛纯牛奶',40.3,400,'西公司','20170514');
+select * from t_prd;
